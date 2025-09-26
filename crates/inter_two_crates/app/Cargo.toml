@@ -1,0 +1,9 @@
+
+[package]
+name = "writerlib_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+writerlib = { path = "../writerlib" }
+tracy-client = { version = "0.18.2", features = ["enable", "flush-on-exit"] }

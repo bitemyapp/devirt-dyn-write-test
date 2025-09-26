@@ -1,0 +1,26 @@
+
+[workspace]
+members = [
+  "crates/intra_single_crate",
+  "crates/inter_two_crates/writerlib",
+  "crates/inter_two_crates/app",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+
+[workspace.profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = 1
+
+[workspace.profile.bench]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = 1
+
+[workspace.metadata]
+# Intentionally empty.

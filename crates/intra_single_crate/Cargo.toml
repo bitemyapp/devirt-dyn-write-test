@@ -1,0 +1,8 @@
+
+[package]
+name = "intra_single_crate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracy-client = { version = "0.18.2", features = ["enable", "flush-on-exit"] }
